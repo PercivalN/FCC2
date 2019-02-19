@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+
+        :root {
+          --background: rgba(0, 214, 170, .85);
+        }
+        
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          background-color: #eee;
+          font-family: 'Work Sans', sans-serif;
+        }
+        
+        #outer-frame {
+          position: relative;
+        }
+        
+        li {
+          list-style: none;
+        }
+        
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+        
+        
+        
+        
+        /* navigation styles start here */
+        header {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          min-height: 75px;
+          padding: 0px 20px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color: #abc;
+          @media (max-width: 600px) {
+            flex-wrap: wrap;
+          }
+        }
+        
+        
+        
+        .logo {
+          width: 60vw;
+          
+          @media (max-width: 800px) {
+            margin-top: 15px;
+            width: 100%;
+            position: relative;
+          }
+          
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 20px;
+            @media (max-width: 650px) {
+              margin: 0 auto;
+            }
+          }
+        
+        nav{
+          font-weight: 400;
+          
+          @media (max-width: 650px) {
+            margin-top: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 15px;
+            
+            li {
+             padding-bottom: 5px; 
+            }
+          }
+          
+          ul {
+            width: 35vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            @media (max-width: 650px) {
+              flex-direction: column;
+            }
+          }
+        }
+        
+        /* Class styling */
+        .container {
+          max-width: 1000px;
+          width: 100%;
+          margin: 0 auto;
+        }
+        
+        .nav-link a:hover{
+          background: #00f;
+          color: red;
+        }
+        
+        .btn {
+          padding: 0 20px;
+          height: 40px;
+          font-size: 1em;
+          font-weight: 900;
+          text-transform: uppercase;
+          border: 3px black solid;
+          border-radius: 2px;
+          background: transparent;
+          cursor: pointer;
+        }
+        
+        .grid {
+          display: flex;
+        }
+        
+        /* Body styling */
+        #body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 200px;
+          margin-top: 50px;
+          h2 {
+            margin-bottom: 20px;
+            word-wrap: break-word;
+          }
+        
+          input[type="email"] {
+            max-width: 275px;
+            width: 100%;
+            padding: 5px;
+          }
+        
+          input[type="submit"] {
+            max-width: 150px;
+            width: 100%;
+            height: 30px;
+            margin: 15px 0;
+            border: 0;
+            background-color: #f1c40f;
+            
+            &:hover {
+              background-color: orange;
+              transition: background-color 1s;
+            }
+          }
+          
+          @media (max-width: 650px) {
+            margin-top: 120px;
+          }
+        }
+        
+        /* Features section */
+        #features {
+          margin-top: 30px;
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 125px;
+            width: 20vw;
+            color: darkorange;
+        
+            @media (max-width: 550px) {
+              display: none;
+            }
+          }
+        
+          .desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 125px;
+            width: 80vw;
+            padding: 5px;
+        
+            @media (max-width: 550px) {
+              width: 100%;
+              text-align: center;
+              padding: 0;
+              height: 150px;
+            }
+          }
+          
+          @media (max-width: 650px) {
+            margin-top: 0;
+          }
+        }
+        
+        /* how it works section*/
+        
+        #how-it-works {
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+          
+          iframe {
+            max-width: 560px;
+            width: 100%;
+          }
+        }
+        
+        /*pricing*/
+        
+        #contact {
+          margin-top: 60px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          
+          #pilot, #visconti, #montblanc {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: calc(100%  / 3);
+            margin: 10px;
+            border: 1px solid #000;
+            border-radius: 3px; 
+            
+            .level {
+              background-color: #ddd;
+              color: black;
+              padding: 15px 0;
+              width: 100%;
+              text-transform: uppercase;
+              font-weight: 700;
+            }
+            
+            h2 {
+              margin-top: 15px;
+            }
+            
+            ol {
+              margin: 15px 0;
+              
+              li { padding: 5px 0; }
+            }
+            
+            button {
+              border: 0;
+              margin: 15px 0;
+              background-color: #f1c40f;
+              font-weight: 400;
+              
+              &:hover {
+                background-color: orange;
+                transition: background-color 1s;
+              }
+            }
+          }
+          
+          @media (max-width: 800px) {
+            flex-direction: column;
+            
+            #tenor, #bass, #valve { max-width: 300px; width: 100%; margin: 0 auto; margin-bottom: 10px; }
+          }
+        }
+        
+        
+        /*footer*/
+        
+        footer {
+          margin-top: 30px;
+          background-color: #ddd;
+          padding: 20px;
+          
+          ul {
+            display: flex;
+            justify-content: flex-end;
+            
+            li {
+              padding: 0 10px;
+            }
+          }
+          
+          span {
+            margin-top: 5px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.9em;
+            color: #444;
+          }
+        }
+</style>
+
+<!--html part of the code-->
+<div id="outer-frame">
+<header id="header">
+  <div class="logo">
+    <img id= "header-img" src= "/users/dailyaccount/downloads/product-landing-page/logo.jpg" 
+        alt="Pelikan logo" width= "200" height= "60">
+  </div>
+  
+  <!--This is where the navigation bar starts-->
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#service">Service</a></li>
+      <li><a class="nav-link" href="#ordering">Ordering</a></li>
+      <li><a class="nav-link" href="#prices">Prices</a></li>
+     </ul>
+  </nav>
+</header>
+  
+<div class="container">
+  
+  </div>
+  
+<section id="body">
+  <h2>Fountain Pens From All Eras</h2>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input id="email" type="email" name="email" placeholder="Please enter your email" required/>
+    <input id="submit" type="submit" value="Get Started" class="btn"></input>
+  </form>
+</section>  
+  
+<div class="container">
+  <section id="service">
+    <div class="grid">
+      <div class="desc">
+        <h2>Fast and Reliability is Our Motto</h2>
+        <p>We carry all the major pen brands at the most competitive prices. We can provide fast shipping because we don't drop-ship. Everything comes out of our Dallas warehouse, which is centrally located to serve both the East Coast and the West Coast.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="desc">
+        <h2>Reliable Service</h2>
+        <p>We guarantee that all the pens that is shipped out will write right out of the box. Our shippers personally test every pen, insuring that each and every one writes smoothly and never skips a beat.</p>
+      </div>
+    </div>
+    <div class="grid">
+      
+    </div>
+  </section>
+  <section id="ordering">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/v6Zp9n731PQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </section>
+ 
+   
+  
+  
+ <section id="prices">
+    <div id="pilot">
+      <div class="level">
+        Pilot Custom Urushi
+      </div>
+      <h2>$1200</h2>
+      
+      <button class="btn">Select</button>
+    </div>
+    <div id="visconti">
+      <div class="level">
+        HomoSapien 
+      </div>
+      <h2>$650</h2>
+      <button class="btn">Select</button>
+    </div>
+    <div id="montblanc">
+      <div class="level">
+        Montblanc Le Grande
+      </div>
+      <h2>$700</h2>
+      <button class="btn">Select</button>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <span>Copyright 2018, Fountain Pens Revolution</span>
+  </footer>
+</div>
+  
+  
+  
+
+
+</div>
+
+</html>

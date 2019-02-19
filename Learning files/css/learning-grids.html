@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /*
+            grid-column-gap: 1em;
+            grid-row-gap: 1em; */
+
+            grid-gap: 1em;
+        }
+        
+        .container > div{
+            background: #eee;
+            padding: 1em;
+        }
+
+        .container > div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ex deserunt iusto quae magnam voluptatem perferendis, non beatae, earum quidem dolor? Aspernatur, quia sint doloribus ipsa assumenda quam at inventore? Sint illum obcaecati minima, quos ex magni omnis. Exercitationem ducimus aspernatur molestias impedit doloribus cupiditate, veniam corporis inventore aut ipsa expedita quia tempore necessitatibus animi odio, modi sed molestiae minima obcaecati accusantium! Nesciunt excepturi alias voluptatibus reprehenderit ut, cumque possimus optio soluta non recusandae assumenda quibusdam dolores sequi. Laboriosam, hic.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, provident doloribus atque soluta veniam sunt voluptatum et quis corporis harum, ipsa asperiores obcaecati hic illo, culpa vel accusamus dignissimos facere.
+        </div>
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ex deserunt iusto quae magnam voluptatem perferendis, non beatae, earum quidem dolor? Aspernatur, quia sint doloribus ipsa assumenda quam at inventore? Sint illum obcaecati minima, quos ex magni omnis. Exercitationem ducimus aspernatur molestias impedit doloribus cupiditate, veniam corporis inventore aut ipsa expedita quia tempore necessitatibus animi odio, modi sed molestiae minima obcaecati accusantium! Nesciunt excepturi alias voluptatibus reprehenderit ut, cumque possimus optio soluta non recusandae assumenda quibusdam dolores sequi. Laboriosam, hic.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, provident doloribus atque soluta veniam sunt voluptatum et quis corporis harum, ipsa asperiores obcaecati hic illo, culpa vel accusamus dignissimos facere.
+        </div>
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, ex deserunt iusto quae magnam voluptatem perferendis, non beatae, earum quidem dolor? Aspernatur, quia sint doloribus ipsa assumenda quam at inventore? Sint illum obcaecati minima, quos ex magni omnis. Exercitationem ducimus aspernatur molestias impedit doloribus cupiditate, veniam corporis inventore aut ipsa expedita quia tempore necessitatibus animi odio, modi sed molestiae minima obcaecati accusantium! Nesciunt excepturi alias voluptatibus reprehenderit ut, cumque possimus optio soluta non recusandae assumenda quibusdam dolores sequi. Laboriosam, hic.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, provident doloribus atque soluta veniam sunt voluptatum et quis corporis harum, ipsa asperiores obcaecati hic illo, culpa vel accusamus dignissimos facere.
+        </div>
+    </div>
+</body>
+</html>

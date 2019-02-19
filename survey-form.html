@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+html, body {
+  background-color: rgb(250, 240, 230);
+  text-align: center;
+}
+
+h1{
+
+}
+
+#description {
+  text-align: center;
+  font-family: Verdana, Geneva, san-serif;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+form{
+ background-color: white;
+ max-width: 60%;
+ margin: 2em auto;
+ border: solid black 5px;
+ padding: 2em;
+}
+
+p {
+  width: 60%;
+  text-align: right;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+
+}
+
+label {
+  width: 40%;
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inputField{
+ display: inline-block;
+  width: 40%;
+  text-align: left;
+  padding-left: 10px;
+
+}
+
+.persBlock{
+  margin-bottom: 10px;
+
+
+
+}
+.block{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comments{
+  width: 70%;
+  text-align: center;
+}
+
+#comments{
+  text-align: center;
+}
+
+#checkbox{
+  width: 120px;
+  position: relative;
+  float: left;
+  padding-right: 6px;
+
+}
+
+.block #checkbox2{
+  width: 120px;
+  position: relative;
+  float: left;
+  vertical-align: top;
+  padding-right: 10px;
+}
+
+
+
+.wordWrap{
+  width: 40%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+
+}
+
+textarea {
+
+  width:100%;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id= "title">Survey Form</h1>
+<form id= "survey-form">
+  <p id= "description">
+    Let us know how we can improve your experience at FreeCodeCamp.
+  </p>
+  <div class= "block">
+    <div class= "persBlock">
+  <label for= "myName" id= "name-label">Name:</label>
+    <div class= "inputField">
+  <input type= "text" name= "myName" id= "name" placeholder= "Type in your name" required>
+   </div>
+    </div>
+
+    <div class= "persBlock">
+  <label for= "email" id= "email-label">Email:</label>
+      <div class= "inputField">
+  <input type= "email" name= "email"  id= "email"  placeholder= "Email address" required>
+  </div>
+    </div>
+
+    <div class= "persBlock">
+  <label for= "age" id= "number-label">Age:</label>
+  <div class= "inputField">
+  <input type= "number" id= "number" name= "age" placeholder= "Age" min= "13" max= "120" width= 50px required>
+      </div>
+    </div>
+ <label for= "jobRole">Job Role:</label>
+  <div class= "inputField">
+  <select name= "jobRole" id= "dropdown">
+         <option>Student</option>
+         <option>Full Time</option>
+         <option>Part Time</option>
+  </select>
+  </div>
+  </div>
+
+
+  <div class= "block">
+    <div class= "wordWrap">
+  <p> Would you recommend free code camp to a friend?</p>
+    </div>
+  <div class= "inputField">
+  <input type= radio name="radio-button" value= "Definitely">Definitely</input><br>
+ <input type= radio name= "radio-button" value= "Maybe"> Maybe</input><br>
+ <input type= radio name= "radio-button" value= "Never"> Never</input><br>
+</div>
+</div>
+
+<div class= "block">
+  <div class= "wordWrap">
+<p>Which part of FreeCodeCamp do you like most?</p>
+  </div>
+<div class="inputField">
+ <select>
+         <option>Challenges</option>
+         <option>Projects</option>
+         <option>Community</option>
+         <option>Open Source</option>
+</select>
+  </div>
+</div>
+
+
+
+<div class= "block">
+  <div class= "wordWrap">
+   <p>What coding languages do you want to learn?</p>
+</div>
+<div class= "inputField">
+  <div id= "checkbox">
+<input type= "checkbox" value= "html">HTML</input></br>
+<input type= "checkbox" value= "css">CSS</input> </br>
+<input type= "checkbox" value= "jS">JavaScript</input> </br>
+<input type= "checkbox" value= "py">Python</input> </br>
+<input type= "checkbox" value= "ruby">Ruby</input></br>
+<input type= "checkbox" value= "perl">Perl</input></br>
+</div>
+<div id= "checkbox2">
+<input type= "checkbox" value= "c#">C#</input></br>
+<input type= "checkbox" value= "c++">C++</input></br>
+<input type= "checkbox" value= "c">C</input></br>
+<input type= "checkbox" value= "swift">Swift</input></br>
+<input type= "checkbox" value= "java">Java</input></br>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class= "block">
+  <div class= "wordWrap">
+  <P>Things that should be improved in the future
+(check all that applies):</P>
+  </div>
+<div class= "inputField">
+<input type= "checkbox" value="frong-end">Front-end Projects</input></br>
+<input type= "checkbox" value="back-end">Back-end Projects</input></br>
+<input type= "checkbox" value="data">Data Visualization</input></br>
+<input type= "checkbox" value= "challenge">Challenges</input></br>
+<input type= "checkbox" value= "open">Open Source Community</input></br>
+<input type= "checkbox" value= "gitter">Gitter help rooms</input></br>
+<input type= "checkbox" value= "video">videos</input></br>
+<input type= "checkbox" value= "meetup">City Meetups</input></br>
+<input type= "checkbox" value= "wiki">Wiki</input></br>
+<input type= "checkbox" value= "form">Forum</input></br>
+<input type= "checkbox"value= "course">Additional Courses</input></br>
+</div>
+</div>
+
+<div class= "block">
+<P id= "comments">Comments and sugguestions</P>
+<div class= "personal comments">
+<textarea name= "comments" rows= "5" cols= "80"></textarea>
+</div>
+</div>
+<button id= "submit">submit</button>
+</form>
+</html>
